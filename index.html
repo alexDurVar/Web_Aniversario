@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz 5° Aniversario, Mi Amor</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #ffe6e6, #fff5f5);
+      color: #b30059;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 30px 0;
+    }
+
+    .verse {
+      font-style: italic;
+      margin: 30px auto;
+      font-size: 1.5em;
+      max-width: 90%;
+    }
+
+    .message {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff0f5;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      font-size: 1.2em;
+    }
+
+    .gallery {
+      margin-top: 40px;
+    }
+
+    .gallery h2 {
+      margin-bottom: 20px;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      max-width: 250px;
+      height: 350px; /* altura fija */
+      object-fit: cover; /* recorta sin deformar */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .surprise-btn {
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .surprise-btn:hover {
+      background-color: #e05592;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.3em;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2em; }
+      .verse { font-size: 1.2em; }
+      .message { font-size: 1em; }
+      .surprise-btn { font-size: 1em; }
+      .hidden-message { font-size: 1.1em; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.8em; }
+      .verse { font-size: 1.1em; }
+      .message { font-size: 0.95em; }
+      .surprise-btn { font-size: 0.95em; }
+      .hidden-message { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Feliz 5° Aniversario, mi amor 💖</h1>
+
+  <div class="verse">
+    “Toda tú eres hermosa, amor mío, y no hay en ti defecto alguno.”<br>
+    <strong>– Cantares 4:7</strong>
+  </div>
+
+  <div class="message">
+    Desde que llegaste a mi vida, cada día ha sido más brillante, más feliz, más completo. Gracias por estos 5 años de amor, de risas, de aventuras, y de aprender juntos. Te amo con todo mi corazón, y no puedo esperar a seguir construyendo esta historia a tu lado. 💘
+    <P>¡TE AMO INFINITAMENTE!</P>  
+  </div>
+
+  <div class="gallery">
+    <h2>Nuestros momentos</h2>
+    <div class="gallery-container">
+      <img src="foto1.jpg" alt="Nosotros 1">
+      <img src="foto2.jpg" alt="Nosotros 2">
+      <img src="foto3.jpg" alt="Nosotros 3">
+    </div>
+  </div>
+
+  <button class="surprise-btn" onclick="document.querySelector('.hidden-message').style.display='block'">
+    Haz clic para una sorpresa
+  </button>
+
+  <div class="hidden-message">
+    ❤️ Eres la bendición más hermosa que Dios me dio. Te amo cada día más. ❤️
+  </div>
+
+</body>
+</html>
