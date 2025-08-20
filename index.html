@@ -135,9 +135,28 @@
   <div class="hidden-message">
     ❤️ Eres la bendición más hermosa que Dios me dio. Te amo cada día más. ❤️
     <br>
-    Amo todo de ti, cualquier parte de ti, sin excepción alguna, delante de mis ojos eres perfecta y única.
+    Amo todo de ti, cualquier parte de ti, sin excepción alguna, delante de mis ojos eres perfecta y unica.
     Te amo infinitamente.
+    <div class="gallery">
+      <div id="hide" class="gallery-container">
+        <img id="hideIMG" src="miamor.jpeg" alt="Nosotros 3">
+      </div>
+    </div>
+         
   </div>
+<script>
+  window.addEventListener("load", function () {
+    const hideDiv = document.getElementById("hide");
+    if (hideDiv) {
+      // Asegura que inicie visible
+      hideDiv.style.display = "block";
 
+      // Después de 2 segundos se oculta
+      setTimeout(() => {
+        hideDiv.style.display = "none";
+      }, 10000);
+    }
+  });
+</script>
 </body>
 </html>
